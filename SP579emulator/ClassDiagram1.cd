@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="SP579emulator.Tri_CheckSumCalc" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQAABAAAgCAAAACAEEIAAAABECAAAAAAAA=</HashCode>
+      <FileName>Tri_CheckSumCalc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP579emulator.Form1" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BYqGI8F4EaEAMJmYQGKzgAoabbuSSAAAUmyJBCoBAZQ=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP579emulator.Instructions" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAMAYAACAIAAYEAIBAAAEANBAAAAAQGCAAAAAABA=</HashCode>
+      <FileName>Instructions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP579emulator.Tri_BitArray">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAgAAAABARECAAAAABAACAAACAgAAgAAAAAQAA=</HashCode>
+      <FileName>Tri_BitArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP579emulator.Tri_Byte">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <AssociationLine Name="Array" Type="SP579emulator.Tri_BitArray">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="0.597" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAAAAAgAAAADARECAAAAABAACAAACAgAAgAAAAAAAA=</HashCode>
+      <FileName>Tri_Byte.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Array" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SP579emulator.Tri_MemoryMap" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAoAQAACEIAAAAAIAAA=</HashCode>
+      <FileName>Tri_MemoryMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SP579emulator.Tri_Word">
+    <Position X="7.25" Y="1.5" Width="2.25" />
+    <AssociationLine Name="UpperByte" Type="SP579emulator.Tri_Byte">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="0.859" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="LowerByte" Type="SP579emulator.Tri_Byte" ManuallyRouted="true">
+      <Path>
+        <Point X="7.25" Y="2.251" />
+        <Point X="6.25" Y="2.251" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.134" Y="0.06" Height="0.182" Width="0.855" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAAAAAgAAAADARECAAAAABAACAAgAAgAAgAAAAAAAA=</HashCode>
+      <FileName>Tri_Word.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UpperByte" />
+      <Property Name="LowerByte" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

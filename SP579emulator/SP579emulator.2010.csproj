@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB269F2C-0603-4AF4-8990-CEF085DAB404}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SP579emulator</RootNamespace>
+    <AssemblyName>SP579emulator.2010</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tri_Application_Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tri_Application_Log.designer.cs">
+      <DependentUpon>Tri_Application_Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tri_BitArray.cs" />
+    <Compile Include="Tri_Byte.cs" />
+    <Compile Include="Tri_CCR.cs" />
+    <Compile Include="Tri_CheckSumCalc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tri_CheckSumCalc.designer.cs">
+      <DependentUpon>Tri_CheckSumCalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tri_ILU.cs" />
+    <Compile Include="Tri_Instructions.cs" />
+    <Compile Include="Tri_MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tri_MainWindow.designer.cs">
+      <DependentUpon>Tri_MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tri_MainWindow.Methods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tri_MemoryMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tri_MemoryMap.designer.cs">
+      <DependentUpon>Tri_MemoryMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tri_StackPointer.cs" />
+    <Compile Include="Tri_Word.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Tri_Application_Log.resx">
+      <DependentUpon>Tri_Application_Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tri_CheckSumCalc.resx">
+      <DependentUpon>Tri_CheckSumCalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tri_MainWindow.resx">
+      <DependentUpon>Tri_MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tri_MemoryMap.resx">
+      <DependentUpon>Tri_MemoryMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\desktop.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_Cancel_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_Down_32x47LG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_Down_32xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_Up_32x47LG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_Up_32xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\build_Solution_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_6519.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy_6524.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DebugTemplate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoToNextUncovered_8593.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gotothelocationofthecurrentline_6301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_6522.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History_13251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_image_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_6529.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste_6520.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restart_6322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_6530.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowGrid_339.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigma_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusAnnotations_Complete_and_ok_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusAnnotations_Critical_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusAnnotations_Help_and_inconclusive_16xLG_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbols_Play_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbols_Stop_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo_16x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
