@@ -2,7 +2,7 @@ SP579 Machine Simulator
 ===================
 
 A simulator for a theoretical assembly machine called SP579 in C#.
-This application will run files generated from the Assembler though the Linker.
+This application will run files generated from the [Assembler](https://github.com/iboalali/SP579Assembler) though the [Linker](https://github.com/iboalali/SP579Linker).
 
 Mashine Description: [http://goo.gl/oOXBNY](http://goo.gl/oOXBNY)
 
